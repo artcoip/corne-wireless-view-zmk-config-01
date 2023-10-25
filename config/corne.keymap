@@ -15,28 +15,28 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // | ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  |  /   |
+// |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  '  | CAPS |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  ?  | CTRL |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         label = "Base";
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SQT &kp SLASH
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp QMARK/ &kp RCTRL
+   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P     &kp BSPC
+   &kp TAB   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SQT   &kp CAPS
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp QMARK &kp RCTRL
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  !   |  @  |  #  |  $  |  %  |  &  |   |  (  |  7  |  8  |  9  |  *  |  -   |
-// | BTCLR| BT0 | BT1 | BT2 | BT3 | XAP |   |  )  |  4  |  5  |  6  |  /  |  +   |
-// | REDO | UND | CUT | CPY | PST | PRT |   |  0  |  1  |  2  |  3  |  =  | CALC |
+// |  !   |  @  |  #  |  $  |  %  |  &  |   |  (  |  7  |  8  |  9  |  =  | CALC |
+// | BTCLR| BT0 | BT1 | BT2 | BT3 | XAP |   |  )  |  4  |  5  |  6  |  *  |  -   |
+// | REDO | UND | CUT | CPY | PST | PRT |   |  0  |  1  |  2  |  3  |  /  |  +   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         label = "Lower";
                         bindings = <
-   &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp AMPS        &kp LPAR &kp N7 &kp N8   &kp N9 &kp KP_MULTIPLY &kp MINUS
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt C_AC_CLOSE  &kp RPAR &kp N4 &kp N5   &kp N6 &kp SLASH       &kp PLUS
-   &kp K_REDO &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &kp C_AC_PRINT  &kp N0   &kp N1 &kp N2   &kp N3 &kp EQUAL       &kp K_CALC
+   &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp AMPS        &kp LPAR &kp N7 &kp N8   &kp N9 &kp EQUAL       &kp K_CALC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt C_AC_CLOSE  &kp RPAR &kp N4 &kp N5   &kp N6 &kp KP_MULTIPLY &kp MINUS
+   &kp K_REDO &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &kp C_AC_PRINT  &kp N0   &kp N1 &kp N2   &kp N3 &kp SLASH       &kp PLUS
                           	        &kp LGUI     &trans       &kp SPACE       &kp RET  &trans &kp RALT
                         >;
                 };
