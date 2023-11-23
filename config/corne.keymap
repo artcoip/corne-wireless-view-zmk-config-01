@@ -48,14 +48,14 @@
             // -----------------------------------------------------------------------------------------
             // |  F3  |  F4 |  F5 |  F8 | PTSC| HOME|   | Vol+|  [  | F10 | F11 | F12 |  DEL |
             // | CTRL | NTPD|  <  |  ^  |  >  | END |   | MUTE|  ]  |  ;  |  :  | """ |      |
-            // | SHFT | RFSH| PRE | PLP | NXT | STP |   | V0l-| <-  |  ^  |  v  | ->  |      |
+            // | SHFT |     | PRE | PLP | NXT | STP |   | V0l-| <-  |  ^  |  v  | ->  |      |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             label = "Raise";
             bindings = <
 &kp F3     &kp F4                &kp F5         &kp F8     &kp PRINTSCREEN   &kp HOME      &kp K_VOL_UP  &kp LEFT_BRACKET   &kp F10   &kp F11    &kp F12    &kp DEL
 &kp LCTRL  &kp C_AL_TEXT_EDITOR  &kp LESS_THAN  &kp CARET  &kp GREATER_THAN  &kp END       &kp K_MUTE    &kp RIGHT_BRACKET  &kp SEMI  &kp COLON  &kp DQT    &trans
-&kp LSHFT  &kp C_AC_REFRESH      &kp C_PREV     &kp K_PP   &kp K_NEXT        &kp C_STOP    &kp K_VOL_DN  &kp LEFT           &kp UP    &kp DOWN   &kp RIGHT  &trans
+&kp LSHFT  &trans                &kp C_PREV     &kp K_PP   &kp K_NEXT        &kp C_STOP    &kp K_VOL_DN  &kp LEFT           &kp UP    &kp DOWN   &kp RIGHT  &trans
                                                 &kp LGUI   &trans            &kp SPACE     &kp RET       &trans             &kp RALT
             >;
         };
